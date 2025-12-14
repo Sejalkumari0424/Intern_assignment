@@ -149,12 +149,6 @@ This is a public repository containing:
 
 No environment variables are required for local development. The API endpoints are configured in `src/services/api.ts`.
 
-### Allowed IMEIs
-
-The dashboard supports the following IMEI numbers:
-- `865044073967657`
-- `865044073949366`
-
 ## 📄 License
 
 This project is part of an assignment submission.
