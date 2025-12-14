@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { batteryAPI } from './services/api';
 import { CycleSnapshot, BatterySummary } from './types';
 import { CycleNavigation } from './components/CycleNavigation';
@@ -15,7 +15,7 @@ const ALLOWED_IMEIS = ['865044073967657', '865044073949366'];
 
 function App() {
   const [selectedImei, setSelectedImei] = useState<string>(ALLOWED_IMEIS[0]);
-  const [summaries, setSummaries] = useState<BatterySummary[]>([]);
+  const [, setSummaries] = useState<BatterySummary[]>([]);
   const [snapshots, setSnapshots] = useState<CycleSnapshot[]>([]);
   const [currentCycle, setCurrentCycle] = useState<number>(1);
   const [loading, setLoading] = useState<boolean>(true);
